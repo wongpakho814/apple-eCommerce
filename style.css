@@ -612,6 +612,10 @@ html {
   position: absolute;  
 }
 /* Watch bands */
+.watch-bands {
+  transition: margin-right 1s;
+}
+
 .watch-band-img {
   width: 35rem;
   height: 35rem;
@@ -622,6 +626,7 @@ html {
 /* Watch cases */
 .watch-cases {
   flex-direction: column;  
+  transition: margin-top 1s;
 }
 
 .watch-case-img {
@@ -641,10 +646,55 @@ html {
   border-radius: 5rem;
 }
 
+.hide-control {
+  opacity: 0;
+  visibility: hidden;  
+}
+
+.watch-control i {
+  font-size: 3rem;
+  color: var(--primary-color);  
+}
+
 .watch-top-control {
   top: 22vh;
   left: 50%;
   transform: translateX(-50%);
 }
+
+.watch-right-control {
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+}
+
+.watch-bottom-control {
+  left: 50%;
+  bottom: 20vh;
+  transform: translateX(-50%);
+}
+
+.watch-left-control {
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+}
 /* End of watch controls */
+
+/* Watch button */
+.watch-btn {
+  position: absolute;
+  bottom: 30vh;
+  right: 25%;  
+  width: 13rem;
+  height: 5rem;
+  background-color: var(--black-color);
+  color: var(--primary-color);
+  border: 0.1rem dashed var(--white-color);
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  font-weight: 200;
+  cursor: pointer;
+}
+/* End of watch button */
 /* End of section 4 */
